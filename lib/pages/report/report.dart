@@ -25,6 +25,7 @@ import 'package:report/pages/report/first_page.dart';
 import 'package:report/pages/report/fourth_page.dart';
 import 'package:report/pages/report/ninth_page.dart';
 import 'package:report/pages/report/second_page.dart';
+import 'package:report/pages/report/seventh_page.dart';
 import 'package:report/pages/report/sixth_page.dart';
 import 'package:report/pages/report/third_page.dart';
 
@@ -37,6 +38,7 @@ Future<Uint8List> generateResume(PdfPageFormat format) async {
   final _fourthPage = await fourthPage();
   final _fifthPage = await fifthPage();
   final _sixthPage = await sixthPage();
+  final _seventhPage = await seventhPage();
   final _ninthPage = await ninthPage();
 
   pdf.addPage(pw.MultiPage(
@@ -48,6 +50,7 @@ Future<Uint8List> generateResume(PdfPageFormat format) async {
       _fourthPage,
       _fifthPage,
       _sixthPage,
+      _seventhPage,
       _ninthPage
     ],
   ));

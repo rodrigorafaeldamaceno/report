@@ -37,6 +37,9 @@ flutter:
     - assets/images/capa_p5.png
     - assets/images/botoom_p5.png
     - assets/images/botoom_p6.png
+    - assets/images/garantia.png
+    - assets/images/money_icon.png
+    - assets/images/botoom_p7.png
 
     - assets/images/ninth_page.png
   #   - images/a_dot_ham.jpeg
